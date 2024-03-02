@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Money Tracker Web App</h1>
+        <div class="input-section">
+            <label for="expense-input">Expense Name:</label>
+            <input type="text" placeholder="Enter Expenses" id="expense-input">
+            <label for="amount-input">Amount:</label>
+            <input type="number" placeholder="Enter Amount" id="amount-input">
+            <label for="date-input">Date:</label>
+            <input id="date-input" type="date">
+            <button class="add" id="add-btn">Add Expenses</button>
+        </div>
+
+        <div class="expense-list">
+            <h2>Expenses List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-tablebody">
+
+                </tbody>
+                <tfoot>
+                    <td>Total:</td>
+                    <td id="total-exp"></td>
+                    <td></td>
+                    <td></td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

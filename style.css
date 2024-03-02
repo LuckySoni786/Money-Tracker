@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(0, 253, 232);
+}
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: auto; 
+    background-color: rgb(243, 178, 243);
+    box-shadow: 0px 0px 6px 1px black;
+}
+h1,h2{
+    text-align: center;
+    margin-top: 25px;
+    background-color: lightcoral;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.input-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 10px;
+    margin: 20px;
+    align-items: center;
+
+}
+.input-section input[type="number"],.input-section input[type="text"],.input-section input[type="date"]{
+    padding: 5px;
+}
+.input-section button{
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(165, 165, 13);
+    cursor: pointer;
+    font-size: .9rem;
+    transition: .4s;
+}
+.input-section button:hover{
+    background-color: rgb(81, 81, 8);
+    color: #fff;
+}
+
+table{
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+th,td{
+    border: 2px solid #535f37;
+    padding: 8px;
+    text-align: left;
+    
+}
+th{
+    background-color: rgb(201, 240, 122);
+}
+tfoot td{
+    font-weight: bold;
+}
+.del-sec{
+    text-align: center;
+}
+.delete{
+    padding: 4px 10px;
+    font-size: 1rem;
+    background-color: rgb(203, 45, 45);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* -----------media query-----------------------  */
+@media only screen and (max-width: 1000px) {
+    .input-section{
+        display: inline-block;
+        text-align: center;
+    }
+    .input-section button{
+       margin-top: 15px;
+    }
+  }
+@media only screen and (max-width: 900px) {
+    .input-section{
+        display: flex;
+        flex-direction: column;
+    }
+   
+  }
+@media only screen and (max-width: 650px) {
+  
+   
+  }
